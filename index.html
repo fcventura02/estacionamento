@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Estacionamento</title>
+    </head>
+    <body>
+        <section class="form">
+            <div class="container-input">
+                <label for="placa">modelo</label>
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Corsa"
+                    autocomplete="off"
+                />
+            </div>
+            <div class="container-input">
+                <label for="placa">Placa</label>
+                <input
+                    class="input-placa"
+                    type="text"
+                    id="placa"
+                    placeholder="BRA1E23"
+                    autocomplete="off"
+                    maxlength="7"
+                />
+            </div>
+            <div class="submit"><button id="cadastrar">Cadastrar</button></div>
+        </section>
+        <section class="contain-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Placa</th>
+                        <th>Entrada</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="patio"></tbody>
+            </table>
+        </section>
+        <script src="./build/script.js" type="module"></script>
+    </body>
+</html>
